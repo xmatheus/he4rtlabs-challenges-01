@@ -8,21 +8,54 @@
     /* color: rgba(19, 19, 19, 0.986); */
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
+  .container #logoh4 {
+    top: -1%;
+  }
+}
+
+@media (max-width: 1350px) and (max-height: 750px) {
+  .grid-container {
+    height: 90%;
+  }
+
+  .grid-fake {
+    height: 90%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .main-image .text-left h2 {
+    font-size: 2.7rem;
+  }
 }
 
 @media (max-width: 1024px) {
+  .container #logoh4 {
+    top: 0%;
+  }
+
   .grid-container {
     width: 95%;
-    height: 80%;
+    /* height: 80%; */
   }
 
   .grid-fake {
     width: 95%;
-    height: 80%;
+    /* height: 80%; */
   }
   .main-image img {
     width: 80%;
   }
+  #myMoney {
+    /* width: 10vw; */
+    width: 200px;
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 16%;
+    left: 20%;
+    z-index: 50;
+  }
+
   .main-image .text-left h2 {
     text-align: center;
     letter-spacing: 2.5px;
@@ -63,6 +96,11 @@
 }
 
 @media (max-width: 900px) {
+  .container #logoh4 {
+    top: -1%;
+    width: 20vw;
+    padding-top: 10px;
+  }
   .grid-container {
     flex-direction: column;
     width: 90%;
@@ -76,27 +114,40 @@
   .grid-fake .wave {
     position: absolute;
     border-radius: 8px;
-    /* height: 90%; */
-    /* width: 300vw; */
-    /* left: -40%; */
-    /* transform: translateX(-25%); */
     bottom: 0;
   }
 
   .container-inputs {
     width: 90%;
+    height: 80%;
     margin-right: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
 
     /* overflow: hidden; */
   }
 
   .main-image {
     width: 100%;
-    height: 30%;
+    height: 25%;
   }
 
   .main-image img {
     width: 16%;
+  }
+
+  #myMoney {
+    padding: 5px 0px;
+    font-size: 1.4em;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%);
+    top: 27%;
+    left: 50%;
+    z-index: 50;
   }
 
   .main-image .text-left h2 {
@@ -117,25 +168,33 @@
 }
 
 @media (max-width: 650px) {
+  #myMoney {
+    width: 80%;
+    top: 143%;
+    left: 50%;
+  }
+  .container #logoh4 {
+    top: 2%;
+    width: 35vw;
+    padding-top: 10px;
+  }
   .grid-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    height: 200vh;
+    overflow-y: auto;
+    position: absolute;
+    bottom: -116%;
   }
   .main-image {
     width: 100%;
-    height: 30%;
+    height: 70vh;
+    position: relative;
   }
 
   .main-image img {
     width: 40%;
     margin-bottom: 50px;
-  }
-  .grid-container {
-    margin-top: 200px;
-    margin-bottom: 50px;
-    height: 100%;
-    overflow-y: auto;
   }
   .grid-fake {
     display: none;
@@ -144,11 +203,11 @@
 
   .container-inputs {
     width: 90%;
-    height: 20%;
+    height: 100%;
     margin: 0px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   .container-inputs .grid-input {
     /* margin-top: 20px; */
@@ -160,8 +219,8 @@
     grid-template-rows: repeat(auto, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 15px;
-    /* background-color: aqua; */
-    /* padding: auto auto; */
+    overflow-y: auto;
+    margin-bottom: 50px;
   }
 
   .container-inputs .grid-input .card {
@@ -188,6 +247,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: span 1;
   }
 
   .grid-input #calcButton button {
@@ -207,6 +267,7 @@
     outline: none;
     transition: all 0.4s ease-in-out;
     text-align: center;
+    margin-right: 0px;
   }
   .grid-input #calcButton button:hover {
     cursor: pointer;
