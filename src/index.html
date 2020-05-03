@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="/src/css/reset.css" />
     <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" href="/src/css/responsive.css" />
   </head>
   <body>
     <div class="container">
@@ -30,7 +31,7 @@
                 Esse tempo é algo muito valioso para qualquer pessoa, certo?
                 Então claramente temos que levar esse fator em consideração.
               </p>
-              <input type="number" id="tempoinv" />
+              <input type="number" placeholder="0" id="tempoinv" />
             </div>
 
             <div class="card">
@@ -44,7 +45,7 @@
                 que cotar uma quantidade de dias específicos para lidar com todo
                 o processo, sendo ele a parte comercial e desenvolvimento.
               </p>
-              <input type="number" id="diasefet" />
+              <input type="number" placeholder="0" id="diasefet" />
             </div>
 
             <div class="card">
@@ -57,7 +58,7 @@
                 diretamente na quantidade de dias que você deseja tirar "férias"
                 com o valor total projeto.
               </p>
-              <input type="number" id="diasferias" />
+              <input type="number" placeholder="0" id="diasferias" />
             </div>
 
             <div class="card">
@@ -68,7 +69,10 @@
                 recebido pelo freela. A partir desse valor, do quanto você
                 desejaria ganhar em cima do trabalho, é feito o cálculo maior.
               </p>
-              <input type="number" id="valortotal" />
+              <input type="number" placeholder="0" id="valortotal" />
+            </div>
+            <div id="calcButton">
+              <button>Calcular</button>
             </div>
           </div>
           <button>Calcular</button>

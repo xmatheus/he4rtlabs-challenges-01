@@ -6,20 +6,29 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
 }
 
 .grid-container {
-  display: grid;
+  /* display: grid;
   width: 80%;
   height: 80%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-row-gap: 0px; */
+
   -webkit-box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.53);
   box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.53);
   border-radius: 8px;
   z-index: 4;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  height: 80%;
 }
 
 .grid-fake {
@@ -46,7 +55,7 @@
   bottom: -5%;
 }
 .main-image {
-  /* width: 60%; */
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -90,13 +99,13 @@
 }
 
 .container-inputs {
-  width: 100%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  /* background-color: #8743cc; */
+  /* background-color: red; */
   z-index: 10;
   /* overflow: hidden; */
 }
@@ -140,7 +149,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /* background-color: #6c2cacee; */
   border-radius: 10px;
@@ -152,6 +161,9 @@
   background: #6d36b4;
   position: relative;
 }
+.grid-input #calcButton button {
+  display: none;
+}
 
 .grid-input .card h3 {
   font-size: 1.1em;
@@ -159,21 +171,25 @@
   margin-bottom: 5px;
   font-family: "Nanum Gothic", sans-serif;
   color: #fff;
+  height: 10%;
+  /* width: 100%; */
 }
 .grid-input .card img {
-  width: 20%;
+  width: 30%;
+  height: 30%;
+  /* background-color: aqua; */
 }
 
 .grid-input .card p {
-  font-size: 0.75em;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 0.7em;
+  /* font-weight: 500; */
+  line-height: 13px;
+  letter-spacing: 0.7px;
   padding: 0px 20px;
   text-align: justify;
   /* color: rgba(19, 19, 19, 0.986); */
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  bottom: 50%;
 }
 
 .grid-input .card input {
@@ -190,4 +206,5 @@
   border-radius: 5px;
   user-select: none;
   outline: none;
+  margin-bottom: 10px;
 }
