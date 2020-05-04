@@ -96,6 +96,12 @@
 }
 
 @media (max-width: 900px) {
+  .container #by {
+    top: 95%;
+    left: 50%;
+    /* width: 27%; */
+  }
+
   .container #logoh4 {
     top: -1%;
     width: 20vw;
@@ -168,6 +174,11 @@
 }
 
 @media (max-width: 650px) {
+  .container #by {
+    top: 10.2%;
+    left: 50%;
+    /* width: 27%; */
+  }
   #myMoney {
     width: 80%;
     top: 143%;

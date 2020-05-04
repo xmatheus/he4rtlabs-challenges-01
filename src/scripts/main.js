@@ -40,7 +40,7 @@ const createResultDiv = (result) => {
 
     setTimeout(() => {
       div.parentNode.removeChild(div);
-    }, 7000);
+    }, 5000);
   }
 };
 

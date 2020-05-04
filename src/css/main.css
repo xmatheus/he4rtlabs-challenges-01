@@ -36,6 +36,30 @@
   width: 27%;
 }
 
+.container #by {
+  position: absolute;
+  top: 10%;
+  transform: translate(-50%);
+  left: 50%;
+  background-color: #8743cc;
+  padding: 7px 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum Gothic", sans-serif;
+  text-decoration: none;
+  /* width: 27%; */
+}
+
+.container #by:hover {
+  cursor: pointer;
+}
+
 .grid-container {
   -webkit-box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.53);
   box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.53);
