@@ -2,6 +2,10 @@
 
 Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado.
 
+## interface pronta
+
+![interface image](https://raw.githubusercontent.com/xmatheus/he4rtlabs-challenges-01/master/src/img/demo.png)
+
 ## Qual é o valor que o desafio entrega?
 
 O projeto tem a finalidade de descrever alguns fatores determinantes para você saber o seu valor da sua hora em um freelance.
